@@ -96,7 +96,7 @@ async function execute(kind, sql, params) {
 try {
   const payload = JSON.parse(await readStdin() || "{}");
   const result = await execute(payload.kind, payload.sql, payload.params || []);
-  stdout.write(JSON.stringify(result));
+  stdout.write(JSON.stringify(result ?? null));
   await pool.end();
   exit(0);
 } catch (error) {
@@ -104,3 +104,4 @@ try {
   try { await pool.end(); } catch {}
   exit(1);
 }
+
