@@ -1,0 +1,95 @@
+.post-card {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  min-height:430px
+}
+
+.post-card .avatar {
+  margin-bottom:2px;
+  flex:0 0 auto
+}
+
+.post-card .name {
+  display:block;
+  font-weight:800;
+  color:#fff;
+  line-height:1.2;
+  max-width:100%;
+  overflow-wrap:anywhere
+}
+
+.post-card h3 {
+  margin:6px 0 0;
+  font-size:20px;
+  line-height:1.25
+}
+
+.post-card p {
+  margin:0
+}
+
+.post-desc {
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1.45;
+  overflow-wrap:anywhere
+}
+
+.availability {
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1.35;
+  overflow-wrap:anywhere
+}
+
+.badge-row {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  line-height:1
+}
+
+.badge {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  vertical-align:middle;
+  line-height:1;
+  min-height:24px
+}
+
+.status-row {
+  min-height:28px;
+  margin-top:2px
+}
+
+.post-card .actions {
+  margin-top:auto;
+  width:100%
+}
+
+.post-card .actions .btn {
+  min-width:128px;
+  text-align:center
+}
+
+.profile-badges {
+  margin:8px 0 10px
+}
+
+.rating-line {
+  margin:0 0 14px;
+  line-height:1.4
+}
+
+.profile-cover h1 {
+  margin-bottom:8px
+}

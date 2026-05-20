@@ -1,0 +1,215 @@
+.member-body {
+  background:
+    radial-gradient(circle at 16% 14%, rgba(86, 112, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 10%, rgba(0, 212, 170, 0.1), transparent 22%),
+    radial-gradient(circle at 78% 74%, rgba(124, 58, 237, 0.14), transparent 28%),
+    linear-gradient(180deg, #0b1020, #0e1326 42%, #0a1020 100%);
+}
+
+.member-body:before {
+  background-image:
+    linear-gradient(rgba(129, 146, 183, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(129, 146, 183, 0.05) 1px, transparent 1px);
+  background-size: 36px 36px;
+  opacity: 0.82;
+}
+
+.member-body .cursor-glow {
+  background: radial-gradient(circle, rgba(94, 154, 255, 0.12), transparent 65%);
+}
+
+.member-body .navbar {
+  background:
+    linear-gradient(180deg, rgba(14, 21, 40, 0.96), rgba(13, 19, 36, 0.88)),
+    radial-gradient(circle at top, rgba(90, 128, 255, 0.14), transparent 34%);
+  border-bottom: 1px solid rgba(108, 127, 168, 0.2);
+  box-shadow: 0 18px 42px rgba(4, 9, 22, 0.24);
+}
+
+.member-body .nav-links a,
+.member-body .nav-user a,
+.member-body .nav-user button {
+  border-radius: 12px;
+}
+
+.member-body .nav-links a {
+  padding: 10px 12px;
+}
+
+.member-body .nav-links a.active,
+.member-body .nav-links a:hover {
+  border-bottom: 0;
+  background: linear-gradient(135deg, rgba(57, 98, 213, 0.28), rgba(112, 68, 226, 0.18));
+  box-shadow: 0 12px 24px rgba(8, 15, 32, 0.22);
+  text-shadow: none;
+}
+
+.member-body .avatar-mini {
+  padding: 6px 10px;
+  background: linear-gradient(180deg, rgba(18, 27, 47, 0.78), rgba(14, 20, 36, 0.68));
+  border: 1px solid rgba(95, 114, 150, 0.16);
+  box-shadow: 0 10px 24px rgba(4, 9, 22, 0.18);
+}
+
+.member-body .page {
+  max-width: 1240px;
+  padding-top: 108px;
+}
+
+.member-body .page-head h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 1.08;
+}
+
+.member-body .panel,
+.member-body .stats article,
+.member-body .post-card,
+.member-body .action-panel,
+.member-body .transaction-summary-card,
+.member-body .request-row,
+.member-body .review-list-mini article,
+.member-body .achievement,
+.member-body .contact-box,
+.member-body .notification-card,
+.member-body .chat-window,
+.member-body .list-card,
+.member-body .empty-state {
+  background: linear-gradient(180deg, rgba(19, 28, 48, 0.96), rgba(17, 24, 40, 0.84));
+  border: 1px solid rgba(95, 114, 150, 0.22);
+  border-radius: 14px;
+  box-shadow: 0 18px 42px rgba(6, 12, 28, 0.24);
+}
+
+.member-body .panel,
+.member-body .action-panel,
+.member-body .transaction-summary-card,
+.member-body .request-row,
+.member-body .profile-cover,
+.member-body .post-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.member-body .panel:before,
+.member-body .action-panel:before,
+.member-body .transaction-summary-card:before,
+.member-body .request-row:before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(94, 154, 255, 0.85), rgba(92, 225, 194, 0.75));
+}
+
+.member-body .stats article {
+  border-radius: 16px;
+}
+
+.member-body .post-card {
+  border-left-width: 0;
+}
+
+.member-body .tutor-border:before,
+.member-body .learner-border:before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+}
+
+.member-body .tutor-border:before {
+  background: linear-gradient(180deg, rgba(153, 98, 255, 0.92), rgba(101, 58, 208, 0.82));
+}
+
+.member-body .learner-border:before {
+  background: linear-gradient(180deg, rgba(94, 154, 255, 0.92), rgba(66, 108, 216, 0.82));
+}
+
+.member-body .profile-cover {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(107, 170, 255, 0.22), transparent 32%),
+    linear-gradient(135deg, rgba(28, 55, 112, 0.88), rgba(69, 42, 131, 0.84));
+  border: 1px solid rgba(111, 132, 184, 0.24);
+  box-shadow: 0 22px 52px rgba(6, 12, 28, 0.26);
+}
+
+.member-body .detail-hero {
+  border-radius: 16px;
+  box-shadow: 0 20px 48px rgba(6, 12, 28, 0.28);
+}
+
+.member-body .filters,
+.member-body input,
+.member-body select,
+.member-body textarea {
+  border-radius: 12px;
+}
+
+.member-body .filters {
+  padding: 14px 16px;
+  border: 1px solid rgba(95, 114, 150, 0.18);
+  background: linear-gradient(180deg, rgba(18, 27, 47, 0.84), rgba(14, 20, 36, 0.72));
+  box-shadow: 0 12px 28px rgba(4, 9, 22, 0.18);
+}
+
+.member-body input,
+.member-body select,
+.member-body textarea {
+  background: rgba(10, 16, 29, 0.92);
+  border-color: rgba(97, 118, 160, 0.26);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+.member-body input:focus,
+.member-body select:focus,
+.member-body textarea:focus {
+  border-color: rgba(99, 142, 255, 0.72);
+  box-shadow: 0 0 0 4px rgba(79, 142, 247, 0.12), 0 0 22px rgba(79, 142, 247, 0.18);
+}
+
+.member-body .badge {
+  background: linear-gradient(135deg, rgba(62, 89, 145, 0.72), rgba(43, 61, 104, 0.72));
+  border: 1px solid rgba(108, 128, 172, 0.24);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.member-body .blue {
+  background: linear-gradient(135deg, rgba(58, 121, 255, 0.28), rgba(39, 88, 189, 0.24));
+}
+
+.member-body .purple {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.28), rgba(79, 45, 151, 0.24));
+}
+
+.member-body .mint {
+  background: linear-gradient(135deg, rgba(0, 212, 170, 0.26), rgba(0, 128, 102, 0.22));
+}
+
+.member-body .red {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.26), rgba(142, 34, 34, 0.22));
+}
+
+.member-body .action-panel {
+  top: 96px;
+}
+
+.member-body .chat-window header {
+  background: linear-gradient(180deg, rgba(17, 25, 44, 0.98), rgba(13, 20, 36, 0.9));
+}
+
+.member-body .chat-messages .bot {
+  background: rgba(12, 19, 33, 0.92);
+}
+
+.member-body .scroll-top,
+.member-body .chat-button {
+  background: linear-gradient(135deg, #2f62d8, #6944df);
+  box-shadow: 0 18px 34px rgba(11, 22, 52, 0.26);
+}
+
+@media (max-width: 760px) {
+  .member-body .page {
+    padding-top: 144px;
+  }
+}

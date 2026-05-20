@@ -1,0 +1,74 @@
+@keyframes glow {
+  from {
+    text-shadow:0 0 8px var(--blue)
+  }
+  to {
+    text-shadow:0 0 22px var(--purple)
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity:0;
+    transform:translateY(18px)
+  }
+  to {
+    opacity:1;
+    transform:none
+  }
+}
+@keyframes bounceIn {
+  0% {
+    opacity:0;
+    transform:scale(.88)
+  }
+  70% {
+    transform:scale(1.03)
+  }
+  100% {
+    opacity:1;
+    transform:scale(1)
+  }
+}
+@keyframes float {
+  to {
+    transform:translate(30px,-24px)
+  }
+}
+@keyframes drift {
+  to {
+    transform:translateY(-50px)
+  }
+}
+@keyframes pulse {
+  50% {
+    box-shadow:0 0 26px rgba(0,212,170,.42)
+  }
+}
+@keyframes urgent {
+  50% {
+    border-color:var(--red)
+  }
+}
+@keyframes shimmer {
+  to {
+    transform:translateX(100%)
+  }
+}
+@keyframes toast {
+  from {
+    opacity:0;
+    transform:translateX(30px)
+  }
+  to {
+    opacity:1;
+    transform:none
+  }
+}
+@keyframes progress {
+  from {
+    width:0
+  }
+  to {
+    width:100%
+  }
+}

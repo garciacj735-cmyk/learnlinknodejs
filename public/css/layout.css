@@ -1,0 +1,133 @@
+.page {
+  position:relative;
+  max-width:1180px;
+  margin:0 auto;
+  padding:104px 18px 60px
+}
+.admin-main {
+  margin-left:250px;
+  padding:36px 24px
+}
+.navbar {
+  position:fixed;
+  z-index:20;
+  top:0;
+  left:0;
+  right:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 28px;
+  background:rgba(13,13,13,.78);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border)
+}
+.navbar.public {
+  display:grid;
+  grid-template-columns:1fr auto 1fr
+}
+.brand {
+  font-size:24px;
+  font-weight:900;
+  color:#fff
+}
+.glow {
+  animation:glow 2.6s infinite alternate
+}
+.nav-links,.nav-user {
+  display:flex;
+  align-items:center;
+  gap:18px
+}
+.public-center {
+  justify-content:center
+}
+.nav-login {
+  justify-self:end
+}
+.nav-links a.active,.nav-links a:hover {
+  border-bottom:2px solid var(--mint);
+  text-shadow:0 0 14px var(--blue)
+}
+.avatar-mini {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#fff
+}
+.avatar-mini img,.tiny {
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  object-fit:cover
+}
+.avatar {
+  width:86px;
+  height:86px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--border)
+}
+.big {
+  width:150px;
+  height:150px
+}
+.huge {
+  width:170px;
+  height:170px
+}
+.ring {
+  box-shadow:0 0 0 4px rgba(79,142,247,.2),0 0 26px rgba(124,58,237,.5)
+}
+.bell span {
+  background:var(--red);
+  padding:2px 7px;
+  border-radius:20px;
+  color:#fff
+}
+.admin-sidebar {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  width:250px;
+  background:#111126;
+  border-right:1px solid var(--border);
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(79,142,247,.5) transparent
+}
+.admin-sidebar::-webkit-scrollbar {
+  width:8px
+}
+.admin-sidebar::-webkit-scrollbar-track {
+  background:transparent
+}
+.admin-sidebar::-webkit-scrollbar-thumb {
+  background:rgba(79,142,247,.35);
+  border-radius:999px
+}
+.admin-sidebar::-webkit-scrollbar-thumb:hover {
+  background:rgba(79,142,247,.55)
+}
+.admin-sidebar a,.link-button {
+  color:var(--soft);
+  padding:10px;
+  border-radius:8px;
+  background:transparent;
+  border:0;
+  text-align:left
+}
+.admin-sidebar a.active,.admin-sidebar a:hover {
+  background:rgba(79,142,247,.14);
+  color:#fff
+}
+.admin-logout-form {
+  margin-top:auto;
+  padding-top:8px
+}

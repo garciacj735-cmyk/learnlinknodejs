@@ -1,0 +1,57 @@
+@media(max-width:1000px) {
+  .post-grid {
+    grid-template-columns:repeat(2,1fr)
+  }
+  .detail-layout,.split {
+    grid-template-columns:1fr
+  }
+  .filters {
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .admin-main {
+    margin-left:0;
+    padding-top:92px
+  }
+  .admin-sidebar {
+    position:fixed;
+    right:0;
+    bottom:auto;
+    width:100%;
+    height:auto;
+    z-index:30;
+    flex-direction:row;
+    overflow:auto
+  }
+  .stats {
+    grid-template-columns:repeat(2,1fr)
+  }
+}
+@media(max-width:760px) {
+  .navbar {
+    gap:10px;
+    flex-wrap:wrap
+  }
+  .nav-links {
+    order:3;
+    width:100%;
+    justify-content:space-between
+  }
+  .nav-user b,.nav-user small {
+    display:none
+  }
+  .page {
+    padding-top:140px
+  }
+  .post-grid,.grid-2,.grid-3,.role-grid,.gender-grid,.achievement-grid,.stats,.filters {
+    grid-template-columns:1fr
+  }
+  .chat-window {
+    inset:0;
+    width:auto;
+    max-height:none;
+    border-radius:0
+  }
+  .detail-hero {
+    height:220px
+  }
+}

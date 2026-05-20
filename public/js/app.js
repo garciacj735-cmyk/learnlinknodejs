@@ -1,0 +1,25 @@
+import { initCursorGlow } from './modules/cursor.js';
+import { initPasswordToggles, initLoginModal } from './modules/auth.js';
+import { initTextareaCounters, initPostFormToggles } from './modules/forms.js';
+import { initConfirmModal } from './modules/confirm.js';
+import { initNotifications } from './modules/notifications.js';
+import { initAdminNavigation, initAdminScrollPersistence, initAnnouncementHistory, initScrollTop, initCelebration } from './modules/admin.js';
+import { initChat } from './modules/chat.js';
+import { initReportModal } from './modules/reports.js';
+import { initWarningModal } from './modules/warnings.js';
+
+initCursorGlow();
+initPasswordToggles();
+initLoginModal();
+initTextareaCounters();
+initPostFormToggles();
+initConfirmModal();
+initReportModal();
+initWarningModal();
+initNotifications();
+initAdminNavigation();
+initAdminScrollPersistence();
+initAnnouncementHistory();
+initScrollTop();
+initCelebration();
+initChat();
