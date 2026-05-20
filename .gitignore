@@ -3,4 +3,6 @@ node_modules/
 data/*.sqlite
 server.out.log
 server.err.log
+server-test.out.log
+server-test.err.log
 -
