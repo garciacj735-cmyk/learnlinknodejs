@@ -47,7 +47,14 @@ export function createSession(userId = null) {
   const csrf = randomToken(24);
   const now = isoNow();
   db.prepare("INSERT INTO node_sessions (id, user_id, csrf_token, flashes, created_at, updated_at) VALUES (?, ?, ?, '[]', ?, ?)").run(id, userId, csrf, now, now);
-  return db.prepare("SELECT * FROM node_sessions WHERE id = ?").get(id);
+  return {
+    id,
+    user_id: userId,
+    csrf_token: csrf,
+    flashes: "[]",
+    created_at: now,
+    updated_at: now
+  };
 }
 
 export function setSessionUser(sessionId, userId) {

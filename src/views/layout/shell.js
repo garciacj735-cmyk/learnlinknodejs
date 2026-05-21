@@ -29,8 +29,8 @@ function renderGuestNav(context) {
 }
 
 export function wrapPage(context, title, body) {
-  const sessionId = context.session?.id || createSession().id;
-  const session = db.prepare("SELECT * FROM node_sessions WHERE id = ?").get(sessionId);
+  const session = context.session || createSession();
+  const sessionId = session.id;
   const user = context.user;
   const flashes = context.flashes || [];
   const unread = user ? countUnreadNotifications(user.id) : 0;
