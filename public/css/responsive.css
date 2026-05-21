@@ -1,57 +1,348 @@
-@media(max-width:1000px) {
-  .post-grid {
-    grid-template-columns:repeat(2,1fr)
+@media (max-width: 1200px) {
+  .public-page-shell,
+  .welcome-section,
+  .admin-body .admin-main,
+  .page {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .detail-layout,.split {
-    grid-template-columns:1fr
+
+  .public-showcase-grid,
+  .welcome-flow,
+  .post-grid,
+  .achievement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .detail-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+
   .filters {
-    grid-template-columns:repeat(2,minmax(0,1fr))
-  }
-  .admin-main {
-    margin-left:0;
-    padding-top:92px
-  }
-  .admin-sidebar {
-    position:fixed;
-    right:0;
-    bottom:auto;
-    width:100%;
-    height:auto;
-    z-index:30;
-    flex-direction:row;
-    overflow:auto
-  }
-  .stats {
-    grid-template-columns:repeat(2,1fr)
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-@media(max-width:760px) {
+
+@media (max-width: 1000px) {
+  .page-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .post-grid,
+  .welcome-flow,
+  .public-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .detail-layout,
+  .split,
+  .public-info-grid,
+  .public-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-panel {
+    position: static;
+    top: auto;
+  }
+
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-body .admin-main,
+  .admin-main {
+    margin-left: 0;
+    padding-top: 108px;
+  }
+
+  .admin-body .admin-sidebar,
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    z-index: 40;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 14px 16px;
+  }
+
+  .admin-body .admin-brand-block,
+  .admin-body .admin-profile-chip,
+  .admin-profile-chip {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+  .admin-body .admin-sidebar a,
+  .admin-body .admin-sidebar .link-button,
+  .admin-sidebar a,
+  .admin-sidebar .link-button {
+    flex: 0 0 auto;
+    min-height: 42px;
+  }
+
+  .warning-shell > .form-panel,
+  .form-panel {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
   .navbar {
-    gap:10px;
-    flex-wrap:wrap
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
   }
+
+  .navbar.public {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
   .nav-links {
-    order:3;
-    width:100%;
-    justify-content:space-between
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 2px;
   }
-  .nav-user b,.nav-user small {
-    display:none
+
+  .nav-user {
+    margin-left: auto;
+    gap: 8px;
   }
-  .page {
-    padding-top:140px
+
+  .nav-user b,
+  .nav-user small {
+    display: none;
   }
-  .post-grid,.grid-2,.grid-3,.role-grid,.gender-grid,.achievement-grid,.stats,.filters {
-    grid-template-columns:1fr
+
+  .page,
+  .public-page-shell {
+    padding-top: 132px;
   }
-  .chat-window {
-    inset:0;
-    width:auto;
-    max-height:none;
-    border-radius:0
+
+  .auth-scene,
+  .welcome-scene {
+    padding: 104px 14px 56px;
   }
+
+  .auth-card,
+  .panel,
+  .list-card,
+  .public-contact-form,
+  .public-contact-copy,
+  .public-page-hero,
+  .public-info-card,
+  .public-showcase-card {
+    padding: 20px;
+  }
+
+  .post-grid,
+  .grid-2,
+  .grid-3,
+  .role-grid,
+  .gender-grid,
+  .achievement-grid,
+  .stats,
+  .filters,
+  .welcome-flow,
+  .public-showcase-grid,
+  .public-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .role-card,
+  .gender-grid label,
+  .post-card,
+  .public-step-list article,
+  .public-bullet-grid article {
+    min-width: 0;
+  }
+
+  .post-card {
+    min-height: 0;
+  }
+
+  .post-card .actions {
+    width: 100%;
+  }
+
+  .post-card .actions .btn,
+  .actions .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .meta,
+  .actions,
+  .badge-row {
+    gap: 6px;
+  }
+
   .detail-hero {
-    height:220px
+    height: 220px;
+    margin-bottom: -32px;
+  }
+
+  .detail-card {
+    padding-top: 44px;
+  }
+
+  .profile-cover {
+    padding: 64px 16px 22px;
+  }
+
+  .chat-button,
+  .scroll-top {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .chat-window {
+    inset: auto 12px 86px 12px;
+    width: auto;
+    max-width: none;
+    max-height: calc(100vh - 118px);
+    border-radius: 18px;
+  }
+
+  .chat-messages {
+    height: min(42vh, 320px);
+  }
+
+  .toast {
+    top: 96px;
+    right: 12px;
+    left: 12px;
+  }
+
+  .table-wrap,
+  .admin-table-wrap,
+  .panel table,
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .public-contact-form textarea,
+  textarea {
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand,
+  .admin-body .brand {
+    font-size: 18px;
+  }
+
+  .logo-hero,
+  .public-page-hero h1,
+  .public-contact-copy h1 {
+    font-size: clamp(28px, 9vw, 36px);
+  }
+
+  .welcome-copy,
+  .public-page-hero p:last-child,
+  .public-contact-lead {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .page,
+  .public-page-shell,
+  .welcome-section,
+  .admin-body .admin-main,
+  .admin-main {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .page,
+  .public-page-shell {
+    padding-top: 128px;
+  }
+
+  .admin-body .admin-main,
+  .admin-main {
+    padding-top: 120px;
+    padding-bottom: 34px;
+  }
+
+  .admin-body .admin-sidebar,
+  .admin-sidebar {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .admin-body .admin-sidebar a,
+  .admin-body .admin-sidebar .link-button,
+  .admin-sidebar a,
+  .admin-sidebar .link-button {
+    padding: 10px 12px;
+    min-height: 40px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+
+  .filters {
+    gap: 8px;
+  }
+
+  .stats article,
+  .panel,
+  .list-card,
+  .public-info-card,
+  .public-showcase-card,
+  .public-contact-copy,
+  .public-contact-form {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .public-page-hero {
+    padding: 20px 18px;
+    border-radius: 22px;
+  }
+
+  .modal-card,
+  .auth-card,
+  .wide-card {
+    width: 100%;
+  }
+
+  .modal-close {
+    right: 8px;
+    top: 8px;
+  }
+
+  .gender-grid img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .bell,
+  .avatar-mini {
+    transform: scale(.95);
+    transform-origin: right center;
   }
 }
